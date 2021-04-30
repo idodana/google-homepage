@@ -48,6 +48,10 @@ main {
     margin-top: 10%;
 }
 
+main img {
+    margin-bottom: 20px;
+}
+
 .material-icons {
     user-select: none;
     -ms-user-select: none;
@@ -64,11 +68,28 @@ main {
 }
 
 #search-box-input {
-    border: 1px solid #767676;
+    border: 1px solid #dfe1e5;
     padding: 10px;
-    width: 500px;
-    height: 30px;
-    border-radius: 15px;
+    width: 590px;
+    height: 50px;
+    border-radius: 25px;
+    font-size: 16px;
+}
+
+@media (max-width: 600px) {
+    #search-box-input {
+        width: 400px;
+    }
+}
+
+@media (max-width: 500px) {
+    #search-box-input {
+        width: 300px;
+    }
+}
+
+#google-apps {
+    cursor: pointer;
 }
 
 #search-box-input:focus {
@@ -83,8 +104,8 @@ main {
 
 #voice-search {
     position: relative;
-    top: 10px;
-    right: 35px;
+    top: 8px;
+    right: 45px;
     cursor: pointer;
 }
 
